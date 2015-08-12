@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+hello world!
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$.ajax({
+	type : 'POST',
+	url : "Register",
+	data : {
+		"username" : "mrpod2g",
+		"password": "123456",
+		"email":"qq@qq.com"
+	},
+	success : function(msg) {
+		alert(msg=='用户名已经存在！');
+	}
+});
+</script>
+</html>
